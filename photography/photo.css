@@ -1,0 +1,79 @@
+@font-face {
+    font-family: 'Lato';
+    src: url('../fonts/ShipporiAntique.ttf') format('ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body{
+    background-color: #FAF3E5;
+    color: #1A1A1A;
+    font-family: 'Lato';
+    margin: 20px;
+}
+
+.topnav a {
+    text-decoration: none;
+    color: inherit;
+    position: relative;
+    left: 52%;
+    padding: 5px 10px;
+}
+
+.topnav a::after {
+    content: '';
+    position: absolute;
+    bottom: -4px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 4px;
+    height: 4px;
+    background-color: #1A1A1A;
+    border-radius: 10px;
+    transition: width 0.3s ease;
+}
+
+.topnav a.inactive:hover::after {
+    width: 40%;
+    height: 2.5px;
+}
+
+.navbutton {
+    border: 2.5px solid #1A1A1A;
+    background-color: transparent;
+    color: #1A1A1A;
+    font-family: 'Lato';
+    border-radius: 8px;
+    font-size: 15px;
+    font-weight: 530;
+    padding: 8px 16px;
+    text-align: center;
+    display: inline-block;
+    transition: 0.3s ease;
+    height: 35px;
+    line-height: 15px;
+}
+  
+.navbutton:hover {
+    background-color: #1A1A1A;
+    color: #FAF3E5;
+}
+
+.project {
+    position: relative;
+    padding-top: 20px;
+    margin-left: 20%;
+    margin-top: 8%;
+  }
+  
+.project:before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: -120px;
+    width: 100px;
+    height: 2px;
+    background-color: #1A1A1A;
+    border-radius: 8px;
+    transform: translateY(-50%);
+}

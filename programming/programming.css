@@ -1,0 +1,139 @@
+@font-face {
+    font-family: 'Lato';
+    src: url('../fonts/ShipporiAntique.ttf') format('ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body{
+    background-color: #1A1A1A;
+    color: #FAF3E5;
+    font-family: 'Lato';
+    margin: 20px;
+}
+
+.topnav a {
+    text-decoration: none;
+    color: inherit;
+    position: relative;
+    left: 60%;
+    padding: 5px 10px;
+}
+
+.topnav a::after {
+    content: '';
+    position: absolute;
+    bottom: -4px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 4px;
+    height: 4px;
+    background-color: #FAF3E5;
+    border-radius: 10px;
+    transition: width 0.3s ease;
+}
+
+.topnav a.inactive:hover::after {
+    width: 40%;
+    height: 2.5px;
+}
+
+.navbutton {
+    border: 2.5px solid #FAF3E5;
+    background-color: transparent;
+    color: #FAF3E5;
+    font-family: 'Lato';
+    border-radius: 8px;
+    font-size: 15px;
+    font-weight: 530;
+    padding: 8px 16px;
+    text-align: center;
+    display: inline-block;
+    transition: 0.3s ease;
+    height: 35px;
+    line-height: 15px;
+}
+  
+.navbutton:hover {
+    background-color: #FAF3E5;
+    color: #1A1A1A;
+}
+
+.projects {
+    display: flex;
+    flex-direction: column;
+}
+  
+.project-container {
+    display: flex;
+    flex-direction: row;
+}
+
+.project {
+    position: relative;
+    padding-top: 20px;
+    margin-left: 15%;
+    margin-top: 8%;
+    display: flex;
+    flex-direction: column;
+    flex-basis: 50%;
+}
+
+.description a {
+    text-decoration: underline;
+    color: inherit;
+}
+  
+h1{
+    position: relative;    
+    padding-left: -25px;
+}
+
+h1:before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    margin-left: -130px;
+    width: 100px;
+    height: 2px;
+    background-color: #FAF3E5;
+    border-radius: 8px;
+    transform: translateY(-50%);
+}
+
+.project-image {
+    align-items: center;
+    padding-top: 20px;
+    margin-top: 10%;
+    margin-left: 25px;
+    position: relative;
+    width: 50vh;
+    height: 30vh;
+    background-color: #1A1A1A;
+}
+
+.image-container {
+    position: relative;
+    overflow: hidden;
+    width: 50vh;
+    height: 30vh;
+}
+  
+.project-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 300px;
+}
+
+.project-image::after {
+    content: '';
+    position: absolute;
+    bottom: -10;
+    left: 100px;
+    width: 39%;
+    height: 2px;
+    border-radius: 10px;
+    background-color: #FAF3E5;
+}
