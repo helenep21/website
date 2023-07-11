@@ -112,13 +112,6 @@ h1:before {
     height: 30vh;
     background-color: #1A1A1A;
 }
-
-.image-container {
-    position: relative;
-    overflow: hidden;
-    width: 50vh;
-    height: 30vh;
-}
   
 .project-image img {
     width: 100%;
