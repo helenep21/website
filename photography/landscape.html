@@ -3,6 +3,7 @@
     <head>
         <meta charset="utf-8">
         <title>Helene Peignard - Landscape</title>
+        <link rel="icon" href="images/icon.png">
         <link rel="stylesheet" href="photo.css">
     </head>
     <div class="topnav">
@@ -12,25 +13,30 @@
         <a>Landscape</a>
       </div>
 
+      <div class="image-overlay" id="imageOverlay">
+          <span class="close-button" onclick="closeImage()">&times;</span>
+          <img id="overlayImage">
+      </div>
+
       
     <div class="projects">
         <div class="project-container">
             <div class="project">
                 <h1>Winter Landscape</h1>
-                <h2>Swiss</h2>              
+                <h2>Swiss - 2021</h2>              
                 <div class="project-image">
                     <div class="carousel">
-                        <img src="images/swiss_1.jpg" class="carousel-item"></img>
-                        <img src="images/swiss_2.jpg" class="carousel-item"></img>
-                        <img src="images/swiss_3.jpg" class="carousel-item"></img>
-                        <img src="images/swiss_4.jpg" class="carousel-item"></img>
-                        <img src="images/swiss_5.jpg" class="carousel-item"></img>
-                        <img src="images/swiss_6.jpg" class="carousel-item"></img>
-                        <img src="images/swiss_7.jpg" class="carousel-item"></img>
-                        <img src="images/swiss_8.jpg" class="carousel-item"></img>
-                        <img src="images/swiss_9.jpg" class="carousel-item"></img>
-                        <img src="images/swiss_11.jpg" class="carousel-item"></img>
-                        <img src="images/swiss_12.jpg" class="carousel-item"></img>
+                        <img src="images/swiss_1.jpg" class="carousel-item" onclick="openImage(this.src)" title="Click to open in full size"></img>
+                        <img src="images/swiss_2.jpg" class="carousel-item" onclick="openImage(this.src)" title="Click to open in full size"></img>
+                        <img src="images/swiss_3.jpg" class="carousel-item" onclick="openImage(this.src)" title="Click to open in full size"></img>
+                        <img src="images/swiss_4.jpg" class="carousel-item" onclick="openImage(this.src)" title="Click to open in full size"></img>
+                        <img src="images/swiss_5.jpg" class="carousel-item" onclick="openImage(this.src)" title="Click to open in full size"></img>
+                        <img src="images/swiss_6.jpg" class="carousel-item" onclick="openImage(this.src)" title="Click to open in full size"></img>
+                        <img src="images/swiss_7.jpg" class="carousel-item" onclick="openImage(this.src)" title="Click to open in full size"></img>
+                        <img src="images/swiss_8.jpg" class="carousel-item" onclick="openImage(this.src)" title="Click to open in full size"></img>
+                        <img src="images/swiss_9.jpg" class="carousel-item" onclick="openImage(this.src)" title="Click to open in full size"></img>
+                        <img src="images/swiss_11.jpg" class="carousel-item" onclick="openImage(this.src)" title="Click to open in full size"></img>
+                        <img src="images/swiss_12.jpg" class="carousel-item" onclick="openImage(this.src)" title="Click to open in full size"></img>
                     </div>
                 </div>
                   <div class="carousel-navigation">
@@ -46,19 +52,19 @@
                 <h2>2019 - 2023</h2>              
                 <div class="project-image">
                     <div class="carousel">
-                        <img src="images/archi_1.jpg" class="carousel-item"></img>
-                        <img src="images/archi_2.jpg" class="carousel-item"></img>
-                        <img src="images/archi_3.jpg" class="carousel-item"></img>
-                        <img src="images/archi_4.jpg" class="carousel-item"></img>
-                        <img src="images/archi_5.jpg" class="carousel-item"></img>
-                        <img src="images/archi_6.jpg" class="carousel-item"></img>
-                        <img src="images/archi_7.jpg" class="carousel-item"></img>
-                        <img src="images/archi_8.jpg" class="carousel-item"></img>
-                        <img src="images/archi_9.jpg" class="carousel-item"></img>
-                        <img src="images/archi_10.jpg" class="carousel-item"></img>
-                        <img src="images/archi_11.jpg" class="carousel-item"></img>
-                        <img src="images/archi_12.jpg" class="carousel-item"></img>
-                        <img src="images/archi_13.jpg" class="carousel-item"></img>
+                        <img src="images/archi_1.jpg" class="carousel-item" onclick="openImage(this.src)" title="Click to open in full size"></img>
+                        <img src="images/archi_2.jpg" class="carousel-item" onclick="openImage(this.src)" title="Click to open in full size"></img>
+                        <img src="images/archi_3.jpg" class="carousel-item" onclick="openImage(this.src)" title="Click to open in full size"></img>
+                        <img src="images/archi_4.jpg" class="carousel-item" onclick="openImage(this.src)" title="Click to open in full size"></img>
+                        <img src="images/archi_5.jpg" class="carousel-item" onclick="openImage(this.src)" title="Click to open in full size"></img>
+                        <img src="images/archi_6.jpg" class="carousel-item" onclick="openImage(this.src)" title="Click to open in full size"></img>
+                        <img src="images/archi_7.jpg" class="carousel-item" onclick="openImage(this.src)" title="Click to open in full size"></img>
+                        <img src="images/archi_8.jpg" class="carousel-item" onclick="openImage(this.src)" title="Click to open in full size"></img>
+                        <img src="images/archi_9.jpg" class="carousel-item" onclick="openImage(this.src)" title="Click to open in full size"></img>
+                        <img src="images/archi_10.jpg" class="carousel-item" onclick="openImage(this.src)" title="Click to open in full size"></img>
+                        <img src="images/archi_11.jpg" class="carousel-item" onclick="openImage(this.src)" title="Click to open in full size"></img>
+                        <img src="images/archi_12.jpg" class="carousel-item" onclick="openImage(this.src)" title="Click to open in full size"></img>
+                        <img src="images/archi_13.jpg" class="carousel-item" onclick="openImage(this.src)" title="Click to open in full size"></img>
                     </div>
                 </div>
                 <div class="carousel-navigation">
@@ -74,15 +80,15 @@
                 <h2>2019 - 2023</h2>              
                 <div class="project-image">
                     <div class="carousel">
-                        <img src="images/city_1.jpg" class="carousel-item"></img>
-                        <img src="images/city_2.jpg" class="carousel-item"></img>
-                        <img src="images/city_3.jpg" class="carousel-item"></img>
-                        <img src="images/city_4.jpg" class="carousel-item"></img>
-                        <img src="images/city_5.jpg" class="carousel-item"></img>
-                        <img src="images/city_6.jpg" class="carousel-item"></img>
-                        <img src="images/city_7.jpg" class="carousel-item"></img>
-                        <img src="images/city_8.png" class="carousel-item"></img>
-                        <img src="images/city_9.jpg" class="carousel-item"></img>
+                        <img src="images/city_1.jpg" class="carousel-item" onclick="openImage(this.src)" title="Click to open in full size"></img>
+                        <img src="images/city_2.jpg" class="carousel-item" onclick="openImage(this.src)" title="Click to open in full size"></img>
+                        <img src="images/city_3.jpg" class="carousel-item" onclick="openImage(this.src)" title="Click to open in full size"></img>
+                        <img src="images/city_4.jpg" class="carousel-item" onclick="openImage(this.src)" title="Click to open in full size"></img>
+                        <img src="images/city_5.jpg" class="carousel-item" onclick="openImage(this.src)" title="Click to open in full size"></img>
+                        <img src="images/city_6.jpg" class="carousel-item" onclick="openImage(this.src)" title="Click to open in full size"></img>
+                        <img src="images/city_7.jpg" class="carousel-item" onclick="openImage(this.src)" title="Click to open in full size"></img>
+                        <img src="images/city_8.png" class="carousel-item" onclick="openImage(this.src)" title="Click to open in full size"></img>
+                        <img src="images/city_9.jpg" class="carousel-item" onclick="openImage(this.src)" title="Click to open in full size"></img>
                     </div>
                 </div>
                 <div class="carousel-navigation">
@@ -94,14 +100,14 @@
         
         <div class="project-container">
             <div class="project">
-                <h1>Project 2</h1>
-                <h2>Subtitle 2</h2>              
+                <h1>Summer</h1>
+                <h2>Greece - 2022</h2>              
                 <div class="project-image">
                     <div class="carousel">
-                    <img src="images/test1.jpg" class="carousel-item"></img>
-                    <img src="images/test4.jpg" class="carousel-item"></img>
-                    <img src="images/test2.jpg" class="carousel-item"></img>
-                    <img src="images/test3.png" class="carousel-item"></img>
+                    <img src="images/summer_1.jpg" class="carousel-item" onclick="openImage(this.src)" title="Click to open in full size"></img>
+                    <img src="images/summer_2.jpg" class="carousel-item" onclick="openImage(this.src)" title="Click to open in full size"></img>
+                    <img src="images/summer_3.jpg" class="carousel-item" onclick="openImage(this.src)" title="Click to open in full size"></img>
+                    <img src="images/summer_4.jpg" class="carousel-item" onclick="openImage(this.src)" title="Click to open in full size"></img>
                     </div>
                 </div>
                 <div class="carousel-navigation">

@@ -36,3 +36,25 @@ carousels.forEach((carousel) => {
 
   updateCarousel();
 });
+
+function openImage(src) {
+  const overlay = document.getElementById("imageOverlay");
+  const overlayImage = document.getElementById("overlayImage");
+  
+  overlayImage.src = src;
+  overlay.style.display = "flex";
+  document.addEventListener('keydown', handleKeyPress);
+}
+
+function closeImage() {
+  const overlay = document.getElementById("imageOverlay");
+  
+  overlay.style.display = "none";
+  document.addEventListener('keydown', handleKeyPress);
+}
+
+function handleKeyPress(event) {
+  if (event.key === 'Escape') {
+    closeImage();
+  }
+}
