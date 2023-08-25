@@ -130,3 +130,40 @@ h1:before {
     border-radius: 10px;
     background-color: #FAF3E5;
 }
+
+.contact-button {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    background-color: #1A1A1A;
+    color: #FAF3E5;
+    border-radius: 25px;
+    text-align: center;
+    font-size: 34px;
+    padding: 3px 15px;
+    cursor: pointer;
+    z-index: 9999;
+    transition: background-color 0.3s;
+}
+  
+.contact-button:hover {
+    background-color: #FAF3E5;
+    color: #1A1A1A;
+}
+  
+.contact-button a {
+    text-decoration: none;
+    color: inherit;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}  
+  
+.link a {
+    text-decoration: none;
+    color: inherit;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
