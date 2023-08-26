@@ -16,8 +16,9 @@ body{
     text-decoration: none;
     color: inherit;
     position: relative;
-    left: 52%;
+    left: 45%;
     padding: 5px 10px;
+    transform: translateX(-50%);
 }
 
 .topnav a::after {
@@ -216,3 +217,44 @@ h1:before {
     justify-content: center;
     cursor: pointer;
 }
+
+.page-title {
+    text-align: center;
+    margin-top: 100px;
+ }
+ 
+ .social-icons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.linkedin-icon,
+.github-icon {
+    width: 50px;
+    height: 50px;
+    margin: 0 20px;
+}
+ 
+ .email {
+    text-align: center;
+    margin-top: 20px;
+ }
+ 
+ .email-icon {
+    font-size: 24px;
+    vertical-align: middle;
+    margin-right: 10px;
+ }
+ 
+ .email p {
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0;
+ }
+
+ .email a {
+    text-decoration: none;
+    color: inherit;
+ }
